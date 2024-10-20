@@ -26,7 +26,7 @@ export const Content = styled.div`
     flex-direction: column;
 
     overflow-y: scroll;
-    
+
     &::-webkit-scrollbar {
         width: 8px;
     }
@@ -96,6 +96,9 @@ export const Content = styled.div`
         font-size: 16px;
         margin-top: 16px;
         text-align: justify;
+    }
+    > .delete {
+        margin-top: 32px;
     }
 `
 

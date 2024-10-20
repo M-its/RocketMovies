@@ -3,7 +3,7 @@ import { Container } from "./style"
 
 export function ButtonText({ title, isActive = false, icon: Icon, ...rest }) {
     return (
-        <Container to="/" type="button" $isactive={isActive.toString()} {...rest}>
+        <Container type="button" $isactive={isActive.toString()} {...rest}>
             {Icon && <Icon size={20} />}
             {title}
         </Container>

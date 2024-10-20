@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom"
 
-export const Container = styled(Link)`
+export const Container = styled.div`
     background: none;
     color: ${({ theme, $isactive }) =>
         $isactive ? theme.COLORS.PINK : theme.COLORS.GRAY_100};
@@ -12,6 +11,8 @@ export const Container = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
+
+    cursor: pointer;
 
     svg {
         margin-right: 6px;

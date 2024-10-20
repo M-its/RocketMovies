@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom"
 
 export const Container = styled.div`
+    display: block;
     width: 100%;
     height: 224px;
     background-color: ${({ theme }) => theme.COLORS.TRANSPARENT_PINK};
@@ -9,9 +9,11 @@ export const Container = styled.div`
     padding: 32px;
     border-radius: 16px;
     margin-bottom: 24px;
+
+    cursor: pointer;
 `
 
-export const Content = styled(Link)`
+export const Content = styled.div`
     > h1 {
         text-decoration: none;
         color: ${({ theme }) => theme.COLORS.WHITE};

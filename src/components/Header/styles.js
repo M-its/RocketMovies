@@ -34,16 +34,9 @@ export const Brand = styled(Link)`
     color: ${({ theme }) => theme.COLORS.PINK};
 `
 
-export const Profile = styled(Link)`
+export const Profile = styled.div`
     display: flex;
     align-items: center;
-
-    > img {
-        width: 64px;
-        height: 64px;
-
-        border-radius: 50%;
-    }
 
     > div {
         display: flex;
@@ -53,15 +46,29 @@ export const Profile = styled(Link)`
 
         text-align: end;
 
-        strong {
-            font-size: 18px;
-            white-space: nowrap;
-            color: ${({ theme }) => theme.COLORS.WHITE};
-        }
+        button {
+            background: none;
 
-        span {
+            display: flex;
+            justify-content: flex-end;
+            border: none;
+
+            text-decoration: none;
             font-size: 14px;
             color: ${({ theme }) => theme.COLORS.GRAY_100};
         }
+    }
+`
+export const Strong = styled(Link)`
+    font-size: 18px;
+    white-space: nowrap;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+`
+export const Avatar = styled(Link)`
+    img {
+        width: 64px;
+        height: 64px;
+
+        border-radius: 50%;
     }
 `
